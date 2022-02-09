@@ -24,20 +24,37 @@ code {
   /* background-image: radial-gradient(110% 200px at 50% -40px, #000 75%, transparent 90%); */
 }
 .ContentComponent2{
+  
   margin-top: -60px;
   z-index: 202;
   background-color: rgb(118 69 217);
-  height:90vh;
+  height:750px;
 }
 .ContentComponent3{
   z-index: 203;
-   background-color: rgb(116, 90, 218);
+   background-color: rgb(49 61 92);
+}
+.ContentComponent4{
+  background-color: rgb(118 69 217);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px ;
 }
 
+.circle {
+  width: 500px;
+  height: 500px;
+  line-height: 500px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  background: #000
+}
 
 .content1{
  
-  height: 60vh;
+  height:380px;
   text-decoration: white;
   margin: auto;
   display: flex;
@@ -50,7 +67,6 @@ code {
 }
 .star1{
   position: relative;
-
   animation-name: content1Ani1;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -141,3 +157,64 @@ code {
   background-color: beige;
   color: aliceblue;
 }
+.TicketText{
+  padding-left: 20px;
+  display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: left;
+    gap: 40px;
+}
+
+.BTNTicket {
+  cursor: pointer;
+  padding-left:10px;
+  height:30px;
+  background-color:skyblue;
+  border-radius:18px;
+  transition: all .1s;
+  border: none;
+  
+}
+.BTNTicket:hover{
+    border: 3px solid rgb(118 69 217);
+    background-color: white;
+    color: rgb(118 69 217)  ;
+}
+h4{
+  width: 100px;
+}
+
+
+.BTNDetails{
+  cursor: pointer;
+  border: none;
+  height: auto;
+  color: blue;
+  background-color: rgb(250 249 250);
+}
+
+.Card{
+  width: 500px;
+  /* list-style-type: none; */
+  display:grid ;
+  /* grid-auto-flow:column; */
+  justify-content:start;
+  justify-items: center;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+.circle {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  padding: 10px;
+  color:white;
+  text-align: center;
+  font: 32px Arial, sans-serif;
+}
+
