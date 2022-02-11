@@ -95,9 +95,9 @@ const Card1 = () => {
         style={{
           display: "flex",
           justifyContent: "space-between",
-          backgroundColor: "#b7b2b2",
+          backgroundColor: "rgb(221, 211, 211)",
           fontSize: "15px",
-          borderBottom: "1px solid #b7b2b2",
+          borderBottom: "1px solid rgb(221, 211, 211)",
         }}
       >
         <div style={{ padding: "10px" }}>
@@ -106,13 +106,13 @@ const Card1 = () => {
             Draw:Feb 3 , 2022 , 5:30 PM
           </span>
         </div>
-        <div style={{ padding: "10px" }}>
+        <div style={{ padding: "10px" ,color: "blue" }}>
           <button
             scale="sm"
             style={{
               marginLeft: "5px",
               height: "24px",
-              background: "#b7b2b2",
+              background: "rgb(221, 211, 211)",
               border: "none",
               cursor: "pointer",
             }}
@@ -131,7 +131,7 @@ const Card1 = () => {
             style={{
               marginLeft: "5px",
               height: "24px",
-              background: "#b7b2b2",
+              background: "rgb(221, 211, 211)",
               border: "none",
               cursor: "pointer",
             }}
@@ -150,7 +150,7 @@ const Card1 = () => {
             style={{
               marginLeft: "5px",
               height: "24px",
-              background: "#b7b2b2",
+              background: "rgb(221, 211, 211)",
               border: "none",
               cursor: "pointer",
             }}
@@ -202,7 +202,7 @@ const Card1 = () => {
           </p>
         </div>
       </div>
-      <div style={{ backgroundColor: "#b7b2b2" }}>
+      <div style={{ backgroundColor: "rgb(221, 211, 211)" }}>
         {modalfooterCondition ? (
           <div class="container">
             <div class="container__item1">
@@ -225,7 +225,7 @@ const Card1 = () => {
           ""
         )}
 
-        <Button className="BTNDetails" onClick={handlingDetail}>
+        <Button className="BTNDetails2" onClick={handlingDetail}>
           {modalfooterCondition ? (
             <p
               style={{

@@ -184,7 +184,16 @@ h4{
   border: none;
   height: auto;
   color: blue;
-  background-color: #b7b2b2;
+  background-color: rgb(221, 211, 211);
+  padding: 1.0rem;
+}
+.BTNDetails2{
+  cursor: pointer;
+  border: none;
+  height: auto;
+  color: blue;
+  background-color: rgb(221, 211, 211);
+  padding-top:10px
 }
 
 .Card{

@@ -95,14 +95,14 @@ const Card2 = () => {
         style={{
           display: "flex",
           justifyContent: "space-between",
-          backgroundColor: "#b7b2b2",
+          backgroundColor: "rgb(221, 211, 211)",
           fontSize: "15px",
-          borderBottom: "1px solid #b7b2b2",
+          borderBottom: "1px solid rgb(221, 211, 211)",
           
         }}
       >
         <div style={{ padding: "10px" }}>
-          <p style={{ fontWeight: 750, color: "white" }}>Rounds</p>
+          <p style={{ fontWeight: 750, color: "black",paddingLeft: "10px" }}>Rounds</p>
         </div>
        
       </div>
@@ -116,7 +116,7 @@ const Card2 = () => {
         <p style={{color:"grey",fontSize:"15px"}}>Connect your wallet to check your history</p >
         <Button className="BTNTicket2" style={{width:"130px",justifySelf:"center"}}>Connect Wallet</Button>
       </div>
-      <div style={{ backgroundColor: "#b7b2b2" }}>
+      <div style={{ backgroundColor: "rgb(221, 211, 211)",padding:"10px" }}>
       Only showing data for Lottery V2
       </div>
     </Card>

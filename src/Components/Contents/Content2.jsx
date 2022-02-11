@@ -112,7 +112,7 @@ const CardList = () => {
               width: "600px",
             }}
           >
-            <div style={{ display: "grid", gridAutoFlow: "column" ,backgroundColor:"rgb(250 249 250)"}}>
+            <div style={{ display: "grid", gridAutoFlow: "column" ,backgroundColor:"rgb(221, 211, 211)",color:"blue"}}>
               <h3>Next Draw</h3>
               <h5>#464675 | Draw:Feb 3 , 2022 , 5:30 PM</h5>
             </div>
@@ -126,7 +126,7 @@ const CardList = () => {
               </h4>
               <Button className="BTNTicket">Buy Tickets</Button>
             </div>
-            <div style={{backgroundColor:"rgb(250 249 250)" }}>
+            <div style={{backgroundColor:"rgb(221, 211, 211)" }}>
             {modalfooterCondition ? (
               <Container>
                 <div className="container_row"></div>
