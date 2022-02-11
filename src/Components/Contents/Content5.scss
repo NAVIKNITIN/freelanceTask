@@ -1,0 +1,14 @@
+.HTP{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows:repeat(5,1fr) ;
+
+
+
+    &--heading{
+        color: aliceblue;
+        display: grid;
+        grid-column: 2/8;
+        background-color: red;
+    }
+}

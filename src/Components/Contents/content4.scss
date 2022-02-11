@@ -1,0 +1,121 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+  div {
+    text-align: center;
+    font-size: 30px;
+  }
+  &__item1 {
+    display: grid;
+    grid-row: 1 / -1;
+    grid-column: 1/3;
+    grid-template-rows: 20px 40px 20px 1fr;
+    // align-content: start;
+    justify-content: start;
+    justify-items: start;
+
+    &--h4 {
+      font-size: 1.3rem;
+      margin: 0;
+      align-self: flex-start;
+    }
+
+    &--h2 {
+      font-size: 2.3rem;
+      margin: 0;
+      color: purple;
+      align-self: flex-start;
+    }
+
+    &--p1 {
+      font-size: 0.9rem;
+      color: gray;
+      align-self: flex-start;
+    }
+
+    &--p2 {
+      color: gray;
+      align-self: end;
+      font-size: 0.9rem;
+    }
+  }
+  &__item2 {
+    font-size: 1rem !important;
+    grid-row: 1;
+    grid-column: 3/-1;
+  }
+  &__item3 {
+    font-size: 1.2rem !important;
+    grid-row: 2/-1;
+    grid-column: 3/-1;
+    display: grid;
+    grid-template-columns: auto;
+    &--roundcardlist {
+      display: grid;
+      justify-content: start;
+      justify-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 20px;
+    }
+  }
+}
+.nav {
+  color: red;
+  width: 24%;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 15px;
+  grid-auto-flow: column;
+  text-decoration: none;
+  gap: 20px;
+  margin: 20px 0px;
+  &__Link {
+    text-decoration: none;
+  }
+  background-color: white;
+}
+.active {
+  background-color: rgb(16, 112, 255);
+  color: rgb(255, 255, 255);
+  font-size: medium;
+  padding-left: 11px;
+  padding-right: 11px;
+  margin-right: -2px;
+  margin-left: -2px;
+  border-radius: 1.3rem;
+}
+.TicketText {
+  padding-left: 20px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: left;
+  gap: 40px;
+}
+.TicketText2 {
+  padding-left: 20px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+}
+
+.BTNTicket2:hover {
+  width: 110px;
+  border: 3px solid rgb(193, 183, 214);
+  background-color: white;
+  color: rgb(118 69 217);
+}
+.BTNTicket2 {
+  cursor: pointer;
+  padding-left: 10px;
+  height: 30px;
+  background-color: skyblue;
+  border-radius: 18px;
+  transition: all 0.1s;
+  border: none;
+}
