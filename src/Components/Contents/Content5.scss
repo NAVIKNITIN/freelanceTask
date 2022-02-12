@@ -1,35 +1,79 @@
 .HTP{
     display: grid;
     grid-template-columns: repeat(8,1fr);
-    grid-template-rows:repeat(5,1fr) ;
-
-
+    grid-template-rows:repeat(11,20vh) ;
 
     &--body1{
-        color: aliceblue;
-        display: grid;
+        // display: grid;
         grid-column: 2/8;
-        background-color: red;
+        grid-row: 1/2;
+        // background-color: red;
+        color: blue;
     }
     &--body2{
-        background-color:blue;
+        color: blue;
+
+        grid-row: 2/4;
+        display: grid;
+        grid-column: 2/8;
+        gap: 1.0rem;
+        grid-auto-flow: column;
+        border-bottom: 1px solid gray;
+        &--card{
+            border-radius: 1.4rem;
+            margin-top: 5%;
+            border: 1px solid rgb(150, 146, 146);
+            height:80%;
+            width: 90%;
+            display: grid;
+
+
+            &--h4{
+                display: grid;
+                justify-content: end;
+                padding-right: 1.5rem;
+                padding-top: 0.6rem;
+                height: auto;
+                font-weight: 700;
+            }
+            &--h2{
+                display: grid;
+                justify-content: start;
+                font-size: x-large;
+                font-weight: 700;
+                padding-left: 1.0rem;
+                height: auto;
+
+            }
+            &--p{
+                justify-content: center;
+                height: auto;
+                font-size: small;
+               
+                margin: 1.0rem;
+
+            }
+        }
+    }
+    &--body3{
+        
+        grid-row: 4/6;
         display: grid;
         grid-column: 2/8;
         border-bottom: 1px solid rgb(187, 170, 170);
-    }
-    &--body3{
-        background-color:rgb(88, 247, 212);
-        display: grid;
-        grid-column: 2/8;
     }
     &--body4{
         background-color:rgb(208, 255, 0);
         display: grid;
         grid-column: 2/8;
+        grid-row: 6/8;
+
     }
     &--body5{
         background-color:rgb(255, 0, 64);
         display: grid;
         grid-column: 2/8;
+        grid-row: 8/10;
+
     }
 }
