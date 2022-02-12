@@ -5,10 +5,31 @@
 
 
 
-    &--heading{
+    &--body1{
         color: aliceblue;
         display: grid;
         grid-column: 2/8;
         background-color: red;
+    }
+    &--body2{
+        background-color:blue;
+        display: grid;
+        grid-column: 2/8;
+        border-bottom: 1px solid rgb(187, 170, 170);
+    }
+    &--body3{
+        background-color:rgb(88, 247, 212);
+        display: grid;
+        grid-column: 2/8;
+    }
+    &--body4{
+        background-color:rgb(208, 255, 0);
+        display: grid;
+        grid-column: 2/8;
+    }
+    &--body5{
+        background-color:rgb(255, 0, 64);
+        display: grid;
+        grid-column: 2/8;
     }
 }

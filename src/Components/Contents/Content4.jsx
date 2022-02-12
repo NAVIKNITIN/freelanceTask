@@ -30,7 +30,7 @@ const Content4 = () => {
           <NavLink
           activeClassName="active"
           className="nav__Link"
-            to="allhistory"
+            to="/"
           >
             All Hisory
           </NavLink>
@@ -43,8 +43,8 @@ const Content4 = () => {
           </NavLink>
         </div>
         <Routes>
-          <Route exact path="allhistory" element={<Card1 />} />
-          <Route exact path="yourhistory" element={<Card2 />} />
+          <Route exact path="/" element={<Card1 />} />
+          <Route path="yourhistory" element={<Card2 />} />
         </Routes>
       </Router>
       </div>
