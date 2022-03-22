@@ -1,7 +1,13 @@
 import { Button } from "@material-ui/core";
-import React from "react";
-
+import React,{useState} from "react";
+import Buytickets from "../modals/Buytickets"
 const Content1 = () => {
+
+  const [buyticketsCondition, setbuyticketsCondition] = useState(false)
+  const onToggleBuyTicketModal = () => {
+    setbuyticketsCondition(!buyticketsCondition);
+  };
+
   return (
     <div className="ContentComponent1">
       <div
@@ -57,6 +63,9 @@ const Content1 = () => {
                   padding: "5px 5px 5px 5px",
                   width: "100%",
                 }}
+                onClick={()=>{
+                  setbuyticketsCondition(!buyticketsCondition)
+                }}
                
               >
                Buy Tickets
@@ -82,8 +91,18 @@ const Content1 = () => {
           />
         </div>
       </div>
+      
+      {buyticketsCondition === true ?
+    <Buytickets 
+    buyticketsCondition={buyticketsCondition}
+    buyTicketToggle={onToggleBuyTicketModal}
+    /> 
+    :""}
     </div>
+     
   );
+  
 };
+
 
 export default Content1;

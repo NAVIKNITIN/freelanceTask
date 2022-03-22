@@ -1,0 +1,53 @@
+.buyTicketModal{
+    width: 100vw;
+    height: 100vh;
+    &--head{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(231, 224, 224);
+        font-weight: 750;
+        color: black;
+    }
+    &--body{
+        display: grid;
+        grid-template-rows: repeat(8,1fr);
+        margin:1rem;
+        &--body1{
+            grid-row: 1/2;
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: space-between;
+            &--p1{
+
+            }
+            &--p2{
+                font-weight: 700;
+            }
+        }
+
+        &--body2{
+            grid-row: 2/5;
+            border-radius: 0.7rem;
+            background-color: rgb(221, 218, 233);
+            margin: 0.3rem 1rem;
+        }
+        &--body3{
+            grid-row: 5/6;
+        }
+        &--body4{
+            grid-row: 6/7;
+        }
+        &--body5{
+            grid-row: 7/8;
+        }
+        &--body6{
+            grid-row: 8/9;
+        }
+    }
+
+    &--footer{
+        width: 40vh;
+        font-size: smaller;
+       
+    }
+}
